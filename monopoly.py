@@ -78,7 +78,9 @@ class main_bank:
 if __name__ == "__main__":
     f = Figlet(font='standard')
     print(colored(f.renderText('WELCOME TO MONOPOLY BANK MANAGER'), 'green'))
-    cprint("Docs For the Bank Manager is at https://pmdev.in/docs/bank_manager.html",'red')
+    print(colored(f.renderText('Made by Prithwish Mukherjee'),'green'))
+    
+    cprint("Docs For the Bank Manager is at https://docs.pmdev.in/",'red')
     noofpeoplewhowillplaythegame = int(input(colored("Enter the number of people who will play the game: ","cyan")))
     Starting_money.add_user(noofpeoplewhowillplaythegame)
     Starting_money.add_money(noofpeoplewhowillplaythegame)
